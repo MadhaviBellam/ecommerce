@@ -1,0 +1,18 @@
+<h1>Welcome to flipcard Application</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+<p>
+  <strong>Category: </strong>
+  <%= @product.category.name if @product.category %>
+</p>
+
+<%= link_to 'Back', root_path %>
